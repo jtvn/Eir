@@ -1,4 +1,4 @@
-# Eir  
+# Eir  -CTLLTL
 Eir is a PHP vulnerability scanner written in C#.
 This project expands Eir by enabling the generation of CTL and LTL specifications for the nuXmv and NuSMV model checkers.
 
