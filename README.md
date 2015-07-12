@@ -1,5 +1,6 @@
 # Eir  
-PHP vulnerability scanner written in C#.  Why C#? Because! That's why!
+Eir is a PHP vulnerability scanner written in C#.
+This project expands Eir by enabling the generation of CTL and LTL specifications for the nuXmv and NuSMV model checkers.
 
 ### Requirements
 * .NET 4.5 or Mono 3.12.0-1
