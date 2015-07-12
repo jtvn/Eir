@@ -24,6 +24,9 @@ namespace PHPAnalysis
         [Option('t', "target", Required = true, HelpText = TargetHelpText)]
         public string Target { get; set; }
 
+		[Option('g', "ctlltl", DefaultValue = false, Required = false, HelpText = "Whether or not to do CTLLTL analysis instead of Eir")]
+		public bool CTLLTL { get; set; }
+
         [Option('a', "all", DefaultValue = false, HelpText = ScanAllSubroutinesHelpText)]
         public bool ScanAllSubroutines { get; set; }
 
@@ -32,6 +35,14 @@ namespace PHPAnalysis
 
         [Option('c', "configlocation", HelpText = ConfigLocHelpText)]
         public string ConfigLocation { get; set; }
+
+
+		//CTLLTL Specific options
+		[Option('m', "main", Required = false, HelpText = "Main file name")]
+		public string Main { get; set; }
+
+		[Option('r', "Result", Required = false, HelpText = "Result directory")]
+		public string Result { get; set; }
 
         [ParserState]
         public IParserState LastParserState { get; set; }

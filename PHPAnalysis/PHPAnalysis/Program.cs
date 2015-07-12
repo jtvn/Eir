@@ -40,6 +40,14 @@ namespace PHPAnalysis
             Arguments arguments = ParseArguments(args);
             Configuration = GetConfiguration(arguments.ConfigLocation);
             Config configuration = Configuration;
+
+			if (arguments.CTLLTL)
+			{
+				Console.WriteLine("Got here!");
+				CTLLTLProgram.CTLLTLMain(arguments, configuration);
+				Environment.Exit(0);
+			}
+
             FunctionsHandler.Instance.FunctionSpecification = configuration.FuncSpecSettings;
             FunctionsHandler.Instance.LoadJsonSpecifications();
 

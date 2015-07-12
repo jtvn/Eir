@@ -75,12 +75,12 @@
     <Reference Include="QuickGraph.Serialization">
       <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <Reference Include="YamlDotNet">
-      <HintPath>..\packages\YamlDotNet.3.6.0\lib\net35\YamlDotNet.dll</HintPath>
+      <HintPath>..\packages\YamlDotNet.3.6.1\lib\net35\YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -222,6 +222,11 @@
     <Compile Include="Data\PHP\FunctionCall.cs" />
     <Compile Include="Analysis\CFG\Taint\MixedTaint.cs" />
     <Compile Include="Analysis\AST\CustomFunctionHandler.cs" />
+    <Compile Include="Analysis\CFG\CTLLTL\CTLLTL.cs" />
+    <Compile Include="Analysis\CFG\CTLLTL\CTLLTLNode.cs" />
+    <Compile Include="CTLLTLProgram.cs" />
+    <Compile Include="Parsing\SuperCFGCreator.cs" />
+    <Compile Include="Analysis\CFG\CFGCTLPreparation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -259,4 +264,8 @@
   -->
   <ItemGroup />
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Analysis\CFG\CTLLTL\" />
+    <Folder Include="PHPAnalysis\" />
+  </ItemGroup>
 </Project>
